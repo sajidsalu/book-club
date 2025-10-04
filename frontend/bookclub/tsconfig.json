@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node", // ✅ important
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "lib": ["ES2018", "dom"],
+    "paths": {
+      "@/*": ["./*"],
+      "components/*": ["components/*"]
+    }
+  }
+}

@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: bookuser
+      POSTGRES_PASSWORD: bookpass
+      POSTGRES_DB: bookclub
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: "postgresql://bookuser:bookpass@db:5432/bookclub"
+    # ✅ Do NOT mount prisma or node_modules to avoid overwriting generated client
+    volumes:
+      - ./backend/src:/app/src
+    command: sh -c "npx prisma migrate deploy && npm run seed && npm run dev"
+
+volumes:
+  db_data:

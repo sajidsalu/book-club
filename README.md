@@ -121,11 +121,14 @@ docker compose exec backend npx prisma studio
 ---
 ## Snapshots of the screens
 <img width="1848" height="1082" alt="Screenshot from 2025-10-05 03-01-18" src="https://github.com/user-attachments/assets/a3804c96-3391-40dc-9f26-e33fb57f662b" />
-<img width="1848" height="1082" alt="Screenshot from 2025-10-05 03-01-18" src="https://github.com/user-attachments/assets/a3804c96-3391-40dc-9f26-e33fb57f662b" />
+
+<img width="1848" height="1082" alt="Screenshot from 2025-10-05 03-01-02" src="https://github.com/user-attachments/assets/f451cf11-aaf9-4e64-af48-ee56b9604254" />
+
 <img width="1848" height="1082" alt="Screenshot from 2025-10-05 03-01-11" src="https://github.com/user-attachments/assets/7fe116e9-e3d2-44c6-95c3-477ed43e4f19" />
 
 ## 📜 License
 
 MIT
+
 
 
